@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>About | David Cox</title>
+  <!--javascript-->
+
+  <!--css reset bootstrap style-->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <!-- bootstrap CDN-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- personal stylesheet-->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+<!--header section-->
+  <header class="nav">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+         <a class="navbar-brand" href="index.html">Meet Me | David Cox</a>
+  			</div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html"><img src="assets/images/github-128.png" class="social media-object" alt="GitHub">GitHub</a></li>
+            <li><a href="portfolio.html"><img src="assets/images/linkedin-128.png" class="social media-object" alt="LinkedIn">LinkedIn</a></li>
+            <li><a href="contact.html"><img src="assets/images/stackoverflow-128.png" class="social media-object" alt="Stack Overflow">Stack Overflow</a></li>
+          </ul>
+        </div>
+    </nav>
+  </header>
+
+
+  <!--main -->
+  <main class="row" id="mainFormat">
+    <div class="col-lg-9">
+      <!-- <div class="row mainOneHeight blank">
+        &nbsp;
+      </div> -->
+      <!--js buttons -->
+      <div class="row">
+      <section class="col-lg-2 posRel">
+        <nav>
+          <ul class="btn-group-vertical posAbs" id="navTabs" role="group">
+            <li><button class="btn btn-primary btn-block mainBtnFormat" type="button" onclick="index()">About</button></li>
+            <li><button type="button" onclick="portfolio()" class="btn btn-primary btn-block mainBtnFormat">Portfolio</button></li>
+            <li><button type="button" onclick="contact()" class="btn btn-primary btn-block mainBtnFormat">Contact</button></li>
+          </ul>
+        </nav>
+      </section>
+      <!--index-->
+      <section class="col-lg-9 index" id="indexFormat">
+        <div class="row">
+          <h1>About Me | David Cox</h1>
+        </div>
+        <div class="row clearfix">
+          <div id="mainImage">
+            <img src="assets/images/portrait.jpg" id="test" class="auth-image img-thumbnail autoFill" alt="Your Name">
+          </div>
+          <p id="test2">
+            Thank you for taking the time to look at my site! I am a former educator turned web developer. I can program with HTML, css, Javascript, JQuery, and API. I strive to build user friendly websites.
+          </p>
+
+          <p>
+            Please look around and be sure to check out my portfolio items. If you're interested in seeing more you can find me on Github and LinkedIn.
+          </p>
+        </div>
+      </section>
+      <!--contact-->
+      <section class="col-lg-9 contact" id="contactFormat">
+        <div class="row">
+          <h1>Contact</h1>
+        </div>
+        <div class="row clearfix">
+          <form class="form-group">
+            <ul>
+              <li>
+                <label for="name">Name</label>
+                <input class="form-control" type="text" name="name" placeholder="John Smith" required="required">
+              </li>
+              <li>
+                <label for="email">Email</label>
+                <input class="form-control" type="email" name="email" placeholder="example@gmail.com" required="required">
+              </li>
+              <li>
+                <label for="message">Message</label>
+                <textarea class="form-control" name="message" required="required"></textarea>
+              </li>
+            </ul>
+            <input type="submit">
+          </form>
+        </div>
+      </section>
+      <!--portfolio-->
+      <section class="col-lg-9 portfolio" id="portfolioFormat">
+        <div class="row">
+          <h1>Portfolio</h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="row">
+              <img id="horror" class="img-responsive" src="assets/images/technics-q-c-640-480-1.jpg" alt="hangman">
+              <h3>Hangman</h3>
+            </div>
+            <div class="row">
+              <img id="rpg" class="img-responsive" src="assets/images/technics-q-c-640-480-2.jpg" alt="RPG Game">
+              <h3>Classic RPG</h3>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div id="portTitle" class="row">
+              <h3>Title Goes Here</h3>
+            </div>
+            <div id="portInfo" class="row">
+              <p>Information and features go here</p>
+            </div>
+            <div id="portLink" class="row">
+              <button>Check it out</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    </div>
+    <!--media buttons-->
+    <div class="col-lg-3">
+      <div class="row centered">
+        <h2>Connect with Me</h2>
+      </div>
+      <!--my media buttons -->
+      <div class="row">
+        <!--trying to get text to fade in when you hover over the button, will tinker more time allowing-->
+        <div class=" flex-container">
+          <a href="#"><img src="assets/images/github-128.png" class="flex-item" alt="GitHub" /></a>
+          <a href="#"><img src="assets/images/linkedin-128.png" class="flex-item" alt="LinkedIn" /></a>
+          <a href="#"><img src="assets/images/stackoverflow-128.png" class="flex-item" alt="Stack Overflow" /></a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!--footer-->
+  <footer class="nav navbar-fixed-bottom row">
+    <div class="col-lg-4">
+      &nbsp;
+    </div>
+    <div class="container col-lg-4">
+      <p class="copyright">Copyright &copy; 2016 Your Name</p>
+    </div>
+    <div class="col-lg-4">
+      &nbsp;
+    </div>
+  </footer>
+</body>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/javaScript/script.js"></script>
+</html>
