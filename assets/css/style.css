@@ -1,10 +1,9 @@
 /*color pallette
-#051545 -DARK blue
-#170266 - dark teal
-#D9B08C - tan
-#FFCB9A - lighter tan
-#D1E8E2 - light teal
-
+rgb(222, 214, 212) cream
+rgb(134, 152, 171) light grey
+rgb(64, 76, 89)  dark grey
+rgb(92, 140, 164) cadet blue
+font-family: 'Lato', sans-serif; body text
 /*HEADER----------------------------------------------*/
 html, body{
   background-image: url("../images/mountain.jpg");
@@ -18,6 +17,22 @@ img{
   width:100%;
   height:100%;
 }
+a{
+  color:white;
+}
+a:hover{
+  color: rgb(134, 152, 171);
+  text-decoration: none;
+}
+h1, h2, h4{
+  color:white;
+  font-family: 'Merriweather', serif;
+}
+
+.fonts{
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
 /*.hidden{
   display:none;
 }*/
@@ -27,6 +42,7 @@ img{
   position:absolute;
   height:60px;
   color: white;
+  font-family: 'Merriweather', serif;
   background: linear-gradient( to right, rgba(64, 76, 89, 1), rgba(23, 2, 102, 0));
   padding: 5px;
 }
@@ -53,11 +69,14 @@ img{
   position:absolute;
   height:60px;
   color: white;
+  font-family: 'Merriweather', serif;
   background: linear-gradient( to left, rgba(64, 76, 89, 1), rgba(23, 2, 102, 0));
-  padding: 5px;
+  padding: 10px;
 }
 .lTitle{
 margin-left: 5px;
+position: relative;
+
 }
 .rTitle{
 margin-left: 5px;
@@ -85,7 +104,7 @@ margin-left: 5px;
 
 
 #introDiv{
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Merriweather', serif;
   position:absolute;
   min-width:50%;
   min-height: 50%;
@@ -140,6 +159,7 @@ margin-left: 5px;
   width:16%;
   height:8%;
   font-size: 32px;
+  font-family: 'Merriweather', serif;
 }
 .ghostBtn{
   background-color: transparent;
@@ -218,10 +238,12 @@ margin-left: 5px;
   height:10%;
   margin: 5%;
   text-align: center;
-
+  font-family: 'Merriweather', serif;
 }
 
 .portPara{
+  font-family: 'Lato', sans-serif;
+  color: white;
   position: absolute;
     top: 53%;
   margin: 5%;
@@ -236,9 +258,11 @@ Contact Me
   left:10%;
   /*height: 300px;*/
   width:375px;
-  background-color: rgba(64, 76, 89, 1);
+  background-color: rgba(64, 76, 89, 0.8);
   border-radius: 3px;
   padding: 10px;
+  font-family: 'Merriweather', serif;
+  color:white;
 }
 #mainImg{
   height: 300px;
@@ -252,14 +276,14 @@ Contact Me
   top:10%;
   right:10%;
   width: 375px;
-  background-color: rgba(64, 76, 89, 1);
+  background-color: rgba(64, 76, 89, 0.8);
   border-radius: 3px;
   padding: 10px;
+  font-family: 'Lato', sans-serif;
+  color:white;
 }
-.white{
-  padding: 5px;
-  border-radius:3px;
-  background-color: white;
+.header{
+  font-family: 'Merriweather', serif;
 }
 
 /*==============================================================================
@@ -327,6 +351,24 @@ CONTACT LINKS
   background-color: rgba(64, 76, 89, 1);
   height:10%;
   width:15%;
+}
+/*==============================================================================
+LATEST
+===============================================================================*/
+#latest{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  display:flex;
+  justify-content: space-around;
+  height: 450px;
+  margin-top:-225px;
+  width:650px;
+  margin-left:-325px;
+  background-color: rgba(64, 76, 89, 1);
+  /*margin: auto;*/
+  border-radius: 3px;
+  padding: 5px;
 }
 /*==============================================================================
 INFO BUTTON

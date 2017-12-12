@@ -14,6 +14,8 @@
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <!-- barlow font -->
   <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
   <!-- css animations-->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet"
@@ -25,13 +27,13 @@
 <!--header section-->
 <!--left tabs-->
   <div id="left1" class="hidden">
-      <h1 class="title">Meet Me | David Cox</h1>
+      <h1 id="meetMe" class="lTitle">Meet Me | David Cox</h1>
   </div>
   <div id="left2" class="hidden">
-      <h1 class="title">Portfolio</h1>
+      <h1 class="lTitle">Portfolio</h1>
   </div>
   <div id="left3" class="hidden">
-      <h1 class="title">Contact</h1>
+      <h1 class="lTitle">Contact</h1>
   </div>
 
 <!--Back Btn-->
@@ -46,10 +48,10 @@
     <h1 class="title">Resume</h1>
 </div>
 <div id="right2" class="hidden">
-    <h1 class="title"><a href="https://medium.com/@dwc1608/series">My Medium Story</a></h1>
+    <h1 class="title"><a target="_blank" href="https://medium.com/@dwc1608/series">My Medium Story</a></h1>
 </div>
 <div id="right3" class="hidden">
-    <h1 class="title">Blog</h1>
+    <h1 class="title">Latest Work</h1>
 </div>
 
 
@@ -76,7 +78,7 @@
 </div>
 <div id="mainBio">
   <div class="white">
-    <h2>Welcome!</h2>
+    <h2 class="header">Welcome!</h2>
     <p>Welcome to my corner of the internet! I'm a full-stack web developer with the experience to build, modify, and manage websites. I've built databases using MySQL and MongoDB. I've blended HTML, CSS, and Javascript to create atmospheric, responsive websites. I'm constantly on the lookout for emerging technologies and new ways to use old ones.</p>
     <br>
     <p>As a former educator, I managed roughly 150 students each year as I created and modified a year-long curriculum for them. In that time I also mastered the art of public speaking and presenting complex concepts to individuals unfamiliar with the material.</p>
@@ -84,23 +86,23 @@
 </div>
 <!--Portfolio Base-->
   <div id="portItem1" class="hidden">
-    <img src="assets/images/megaman.jpg" class="portImg" alt="">
-    <h1 class="title imageTitle">Brews n Beans</h1>
+    <img src="assets/images/locator.png" class="portImg" alt="">
+    <h1 class="title imageTitle"><a target="_blank" href="https://dwc3k5.github.io/Coffee-Beer-Locator-App/">Brews n Beans</a></h1>
     <p class="portPara">App using API's and firebase to allow users to search for and rate coffee shop locations. Firebase is able to receive information from the apis to generate location unique likes and dislikes.</p>
   </div>
   <div id="portItem2" class="hidden">
     <img src="assets/images/horrorTrivia.png" class="portImg" alt="">
-    <h1 class="title imageTitle">Horror Trivia</h1>
+    <h1 class="title imageTitle"><a href="https://dwc3k5.github.io/Horror-Trivia-Game/">Horror Trivia</a></h1>
     <p class="portPara">Horror themed survival trivia game. Powered by javascript setTimeouts, this page cycles through an array of questions, modifying content based on user responses and time remaining.</p>
   </div>
   <div id="portItem3" class="hidden">
-    <img src="assets/images/megaman.jpg" class="portImg" alt="Monopoly">
-    <h1 class="title imageTitle">Monopoly</h1>
+    <img src="assets/images/monopoly.png" class="portImg" alt="Monopoly">
+    <h1 class="title imageTitle "><a class="fonts" href="https://github.com/dwc3k5/Monopoly-like-App">Monopoly</a></h1>
     <p class="portPara">Full-Stack game using CSS grid, authentication, and a MySQL database. Database put and get request drive functionality while socket.io causes updates to happen live on multiple pages at once.</p>
   </div>
   <div id="portItem4" class="hidden">
     <img src="assets/images/rpg.png" class="portImg" alt="">
-    <h1 class="title imageTitle">Javascript RPG</h1>
+    <h1 class="title imageTitle"><a href="https://dwc3k5.github.io/Classic-RPG-using-js/">Javascript RPG</a></h1>
     <p class="portPara">A javascript intensive take on classical rpgs. User customizes their party and uses abilities and a functioning inventory to defeat waves of randomly generated foes.</p>
   </div>
 
@@ -108,19 +110,30 @@
   <div id="contact" class="hidden">
     <div class="white contactInner">
       <h1>Reach Out!</h1>
-      <h2>Email:</h2><p>dwc1608@gmail.com</p>
-      <h2>Phone:</h2><p>(630)-229-7659</p><p>Feel free to call me or text!</p>
+      <h2>Email:</h2><p class="fonts">dwc1608@gmail.com</p>
+      <h2>Phone:</h2><p class="fonts">(630)-229-7659</p><p class="fonts">Feel free to call me or text!</p>
       <br>
       <br>
-      <h4>Disclaimer:</h4><p>due to the recent acquisition of a puppy, I strongly discourage the use of carrier pigeons.</p>
+      <h4>Disclaimer:</h4><p class="fonts">due to the recent acquisition of a puppy, I strongly discourage the use of carrier pigeons.</p>
     </div>
   </div>
 <!--Resume Base-->
   <div id="resume" class="hidden">
     <embed id="pdf" src="assets/images/David-Cox-Resume.pdf" width="600px" height="400px" type="application/pdf">
-    <!-- <img src="assets/images/David-Cox-Resume.pdf" alt="Resume"> -->
+
   </div>
 
+<!--latest-->
+<div id="latest" class="hidden">
+  <div class="white contactInner">
+    <h1>Some Current Projects:</h1>
+    <p class="fonts">If you're reading this, you're getting an early rendition of my portfolio page. Currently there are a lot of small pieces of CSS I'm trying to iron out to make this sight visually pleasing with smooth transitions. A lot of the Animate.css transitions I've built in are working as intended. Mostly I'm down to the small tweaks like centering header pieces.</p>
+    <br>
+    <p class="fonts">When I'm not working on this page or my portfolio pieces, I'm working on building a react app. My first step will involve setting up generic page layouts, then integrate smooth css transitions and MongoDB to make it all fullstack. I'm also working on Unity to get a handle on C#, which seems to be a pretty common language for building games.</p>
+    <br>
+    <p class="fonts">I have my eyes on Angular as well, but I'll be holding off on that until this Portfolio is looking better.</p>
+  </div>
+</div>
 
 
 <footer>

@@ -13,7 +13,7 @@ $(document).on("click", "#introBtn", function(){
   phaseTwo();
 });
 
-$(document).on("click", "#left1", function(){
+$(document).on("click", "#meetMe", function(){
   meetMeIn();
   mainOut();
 });
@@ -33,6 +33,11 @@ $(document).on("click", "#right1", function(){
   mainOut();
 });
 
+$(document).on("click", "#right3", function(){
+  latestIn();
+  mainOut();
+});
+
 $(document).on("click", "#back", function(){
   console.log("hit");
   switch(currentPage){
@@ -47,6 +52,9 @@ $(document).on("click", "#back", function(){
       break;
     case "contact":
       contactOut();
+      break;
+    case "latest":
+      latestOut();
       break;
   }
   phaseTwo();
@@ -110,6 +118,17 @@ function resumeOut(){
   $("#resume").attr("class", "animated fadeOutUp");
   $("#back").attr("class", "lTabs animated fadeOutLeft");
 }
+
+function latestIn(){
+  $("#latest").attr("class", "animated fadeIn");
+  currentPage = "latest";
+}
+
+function latestOut(){
+  $("#latest").attr("class", "animated fadeOut");
+  $("#back").attr("class", "lTabs animated fadeOutLeft");
+}
+
 function phaseOne(){setTimeout(function(){
   $("#leftCont" ).attr("class", "animated fadeInDown");
   $("#rightCont").attr("class", "animated fadeInDown");
