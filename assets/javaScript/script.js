@@ -4,6 +4,9 @@ $(document).ready(function(){
   meetMeIn();
 });
 
+
+//intro button to main site
+//EDIT: Remove "back" button fadoutleft effect
 $(document).on("click", "#introBtn", function(){
   console.log("buttonhit");
   $("#leftCont" ).attr("class", "animated fadeOutLeft");
@@ -13,6 +16,10 @@ $(document).on("click", "#introBtn", function(){
   phaseTwo();
 });
 
+
+/*==============================================================================
+MAIN LOBBY BUTTON CLICK FUNCTIONS
+===============================================================================*/
 $(document).on("click", "#meetMe", function(){
   meetMeIn();
   mainOut();
@@ -60,7 +67,9 @@ $(document).on("click", "#back", function(){
   phaseTwo();
 
 });
-
+/*==============================================================================
+ANIMATION FUNCTIONS
+===============================================================================*/
 
 function mainOut(){
   $("#left1").attr("class", "lTabs animated fadeOutLeft");
