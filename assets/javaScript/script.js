@@ -6,7 +6,7 @@ $(document).ready(function(){
 
 
 //intro button to main site
-//EDIT: Remove "back" button fadoutleft effect
+//EDIT: Remove "back" button fadoutleft effect!
 $(document).on("click", "#introBtn", function(){
   console.log("buttonhit");
   $("#leftCont" ).attr("class", "animated fadeOutLeft");
