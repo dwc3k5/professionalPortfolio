@@ -18,7 +18,7 @@ $(document).on("click", "#introBtn", function(){
 
 
 /*==============================================================================
-MAIN LOBBY BUTTON CLICK FUNCTIONS
+MAIN LOBBY BUTTON CLICK TRIGGERS
 ===============================================================================*/
 $(document).on("click", "#meetMe", function(){
   meetMeIn();
@@ -67,6 +67,11 @@ $(document).on("click", "#back", function(){
   phaseTwo();
 
 });
+
+/*==============================================================================
+INFO BUTTON FUNCTIOINALITY
+===============================================================================*/
+$("#infoBtn").on("click", function(){console.log("you clicked the info button");});
 /*==============================================================================
 ANIMATION FUNCTIONS
 ===============================================================================*/
