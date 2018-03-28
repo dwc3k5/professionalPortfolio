@@ -152,6 +152,11 @@ margin-left: 5px;
   font-size: 50px;
 }
 
+#mainPage{
+  margin: 0 auto;
+  display:flex;
+  justify-content: space-between;
+}
 #introBtn{
   position:absolute;
   top:50%;
@@ -249,11 +254,11 @@ margin-left: 5px;
   margin: 5%;
 }
 /*==============================================================================
-Contact Me
+Meet Me
 ===============================================================================*/
 #mainImgCont{
 
-  position: absolute;
+  /* position: absolute; */
   top:10%;
   left:10%;
   /*height: 300px;*/
@@ -272,7 +277,7 @@ Contact Me
   justify-content: space-around;
 }
 #mainBio{
-  position: absolute;
+  /* position: absolute; */
   top:10%;
   right:10%;
   width: 375px;
