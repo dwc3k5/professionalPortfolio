@@ -94,6 +94,7 @@ function meetMeIn(){
 function meetMeOut(){
   $("#mainImgCont").attr("class", " animated fadeOut");
   $("#mainBio").attr("class", "animated fadeOut");
+  /*THIS NEEDS TO NOT TRIGGER WHEN SOMEONE FIRST VISITS THE PAGE: the back button shows up for a moment before being removed*/
   $("#back").attr("class", "lTabs animated fadeOutLeft");
 }
 

@@ -156,8 +156,8 @@ margin-left: 5px;
   position:absolute;
   top:50%;
   left:43%;
-  width:16%;
-  height:8%;
+  width: 250px;
+  height:65px;
   font-size: 32px;
   font-family: 'Merriweather', serif;
 }
@@ -384,6 +384,8 @@ INFO BUTTON
 }
 
 #infoBox{
+  /*SET UP FUNCTION TO TOGGLE DISPLAY SETTING*/
+  display: none;
   position: absolute;
   background-color: rgba(64, 76, 89, 1);
   bottom:12%;
