@@ -244,13 +244,15 @@ Meet Me
 }
 
 #mainPage{
-  width:90%;
-  margin: 0 auto;
+  width:80%;
+  margin: 10px auto;
   display:flex;
-  justify-content: space-between;
+    justify-content: space-between;
+    align-items: end;
 }
+
 #introBtn{
-  bottom:0;
+  /*GET THIS TO SHOW UP AT BOTTOM OF DIV*/
   width: 250px;
   height:65px;
   font-size: 32px;
